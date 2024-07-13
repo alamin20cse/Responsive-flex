@@ -20,6 +20,7 @@
 .sidebar
 {
     grid-area: s;
+
 }
 .advatarise
 {
@@ -38,4 +39,43 @@
     "n   m    m   ad"
     "ft  ft   ft   ft"
     ;
+}
+
+
+
+@media screen and (max-width:576px) {
+
+    .containar
+    {
+        grid-template-areas: 
+        "h"
+        "n"
+        "m"
+        "s"
+        "ad"
+        "ft"
+        ;
+    }
+    
+}
+
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .nav ol
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .containar
+    {
+        grid-template-areas: 
+        "h  h"
+        "n   n"
+        "s   m"
+        "ad  ft"
+        ;
+    }
+    
 }
