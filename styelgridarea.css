@@ -1,0 +1,41 @@
+.header, .nav,.main,.sidebar,.advatarise,.footer
+{
+    background-color: antiquewhite;
+    border: 3px solid tomato;
+    padding: 5px;
+    border-radius: 5px;
+}
+.header
+{
+    grid-area: h;
+}
+.nav
+{
+    grid-area: n;
+}
+.main
+{
+    grid-area: m;
+}
+.sidebar
+{
+    grid-area: s;
+}
+.advatarise
+{
+    grid-area: ad;
+}
+.footer
+{
+    grid-area: ft;
+}
+.containar
+{
+    display: grid;
+    grid-template-areas:
+    "h   h   h   h"
+    "n   m    m   s"
+    "n   m    m   ad"
+    "ft  ft   ft   ft"
+    ;
+}
